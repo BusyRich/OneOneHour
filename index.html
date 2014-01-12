@@ -1,0 +1,82 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset=utf-8>
+    <title>One/One Hour</title>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  </head>
+  <body>
+    <a id="forkme" href="https://github.com/BusyRich/OneOneHour" target="_blank">
+      <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub">
+    </a>
+    <nav id="stickynav">
+      <ul id="nav" class="clearfix">
+        <li><a href="#learning">Learn</a></li>
+        <li><a href="#teaching">Teach</a></li>
+        <li><a href="#intro"><img id="logo" src="logo.png"/></a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#helpout">Help</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section id="intro">
+        <h1>The Idea</h1>
+        <p>1/1 hour is not a product, service, or even an event. It is a simple idea revolving around bettering yourself and your community through learning and teaching everyday. 1/1 hours stands for "one hour learning, one hour teaching" and that is what it is all about. Basically you set aside one hour every day to learn something, while also setting aside an hour to share your knowledge with someone else.</p>
+        <p>This site, beyond explaining 1/1 hour, is a resource for anyone who wants to achieve the 1/1 hour goal. Below are a few outlets to help you learn and a few to help you teach. There is also an ever-evolving tome of tools, projects, and instructables you can utilize. Of course any suggestions for updates or improvements are welcome.</p>
+      </section>
+      <section id="learning">
+        <h1>Learning</h1>
+        <p>A lot people enjoying trying something new or exploring new subjects of interest, and that in itself is learning. Of course you don't have to visit the remote Australian wilderness to learn about rare spiders or tribal rituals. Simply opening a book or browsing technical journals online can be more practical and just as fun given a little imagination.</p>
+        <p class="indentless">Here a few outlets you can try to gather greater knowledge:</p>
+        <ul class="ideas">
+          <li>Open a Book (duh)<span class="comment">You would be surprised how enlightening dead trees can be.</span></li>
+          <li>Watch some Videos<span class="comment">Fire up a few tutorials and follow along.</span></li>
+          <li>Start a Project<span class="comment">Get your hands dirty and learn as you go.</span></li>
+          <li>Have a One-on-One<span class="comment">Ask a friend, go to a local meetup, or even fire up a google hangout.</span></li>
+        </ul>
+      </section>
+      <section id="teaching">
+        <h1>Teaching</h1>
+        <p>As long as you love your subject matter, it doesn't take much to be a good teacher. The trick is, and always will be, connecting with those who want to learn what you want to teach. The best way is to just go places and meet people, and that doesn't have to be in the context of the world. You can easily go to local events and watering holes and find people who are eager to learn from your expertise. Of course, the interwebs work too.</p>
+        <p class="indentless">Here a few ways to connect with those in need:</p>
+        <ul class="ideas">
+          <li>Google Helpouts<span class="comment">Set your schedule and school those in need.</span></li>
+          <li>Meetups<span class="comment">A lot of meetups are always looking for presenters, and you get to network, possibly make a few friends. Win, win, and win.</span></li>
+          <li>Library...?<span class="comment">Its surprising, but places like the library and local schools usually are looking for experts to give some time and knowledge.</span></li>
+          <li>Co-Workers<span class="comment">Out for lunch, tell your work mates about that new awesome thing you just discovered.</span></li>
+          <li>Friends/Family<span class="comment">A friend in need...</span></li>
+        </ul>
+      </section>
+      <section id="resources">
+        <h1>Resources</h1>
+        <p>Coming soon...</p>
+      </section>
+      <section id="helpout">
+        <h1>Helpout</h1>
+        <p>My name is <a href="https://github.com/BusyRich" target="_blank">Richard Key</a> and I maintain this site...but I will always accept help. Don't like the colors? Don't like the logo? Just hate the whole website? Send me <a href="mailto:rich@busyrich.com">an email</a> or <a href="https://github.com/BusyRich/OneOneHour" target="_blank">pull request</a>. Chances are if it looks or sounds good I will accept your changes.</p>
+        <p>I also enjoy hearing how you structure your 1/1 hour so don't hesitate to share your ideas/experience.</p>
+      </section>
+      <script type="text/javascript">
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function(evt) {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').stop().animate({
+                  scrollTop: target.offset().top - 76
+                }, 1000);
+
+                evt.preventDefault();
+                return false;
+              }
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
